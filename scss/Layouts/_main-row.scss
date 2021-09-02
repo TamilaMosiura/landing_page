@@ -1,0 +1,13 @@
+.l-main-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0;
+
+    @media screen and (max-width: 1160px) {
+        margin: 0 5% 0;
+    }
+
+    @media screen and (max-width: 765px) {
+        margin: 0 15px;
+    }
+}

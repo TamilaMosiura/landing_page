@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Maison Neue Light";
+  src: url("../font/maison-neue-light/maison-neue-light.ttf");
+}
+
+.l-main-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10% 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .l-main-row {
+    margin: 0 5% 0;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .l-main-row {
+    margin: 0 15px;
+  }
+}
+
+.c-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 1136px;
+  min-height: 79px;
+}
+
+.c-header__logo {
+  width: 140px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.c-header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-header__menu--active {
+  border: none;
+  cursor: pointer;
+  font-family: "Maison Neue Light", serif;
+  font-size: 16px;
+  color: grey;
+}
+
+.c-header__menu--active:hover {
+  color: black;
+}
+
+.c-header__menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 48px;
+}
+/*# sourceMappingURL=styles.css.map */

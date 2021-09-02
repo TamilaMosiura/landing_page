@@ -1,0 +1,35 @@
+.c-header {
+    display: flex;
+    align-items: center;
+    min-width: 1136px;
+    min-height: 79px;
+
+    &__logo {
+        width: 140px;
+        height: 26px;
+        cursor: pointer;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &--active {
+            border: none;
+            cursor: pointer;
+            font-family: "Maison Neue Light", serif;
+            font-size: 16px;
+            color: grey;
+        }
+
+        &--active:hover {
+            color: black;
+        }
+    }
+
+    &__menu-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 48px;
+    }
+}
