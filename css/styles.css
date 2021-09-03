@@ -9,12 +9,6 @@
 }
 
 .l-main-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0 10% 0;
 }
 
@@ -37,8 +31,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 1136px;
-  min-height: 79px;
+  height: 79px;
+  margin-bottom: 10px;
 }
 
 .c-header__logo {
@@ -47,31 +45,94 @@
   cursor: pointer;
 }
 
-.c-header__menu {
+.c-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
-.c-header__menu--active {
-  border: none;
+.c-nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
+  position: relative;
+  margin-right: 40px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6f7274;
+  fill: #6f7274;
+}
+
+.c-nav-item:hover .c-nav-dropped-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-nav-item:hover {
+  color: black;
+  fill: black;
+}
+
+.c-nav-item__content {
   font-family: "Maison Neue Light", serif;
   font-size: 16px;
-  color: grey;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.c-header__menu--active:hover {
+.c-nav-item svg {
+  width: 30px;
+  height: 30px;
+}
+
+.c-nav-dropped-menu {
+  display: none;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background: white;
+  border-radius: 0.25rem;
+  border: 1px solid #dfe1e6;
+  top: 4.2rem;
+  min-width: 238px;
+  margin-left: -1rem;
+}
+
+.c-nav-dropped-menu:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-nav-dropped-menu a {
+  text-decoration: none;
+  color: #7a7a7a;
+  padding: 20px 0 20px 25px;
+  font-family: "Maison Neue Light", serif;
+  font-size: 14px;
+  height: 100%;
+}
+
+.c-nav-dropped-menu a:hover {
+  background-color: #dfe1e6;
   color: black;
 }
 
-.c-header__menu-icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  margin-left: 48px;
+.c-nav-dropped-menu__change {
+  min-width: 150px;
+  right: 0;
 }
 /*# sourceMappingURL=styles.css.map */

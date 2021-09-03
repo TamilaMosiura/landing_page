@@ -1,35 +1,87 @@
 .c-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     min-width: 1136px;
-    min-height: 79px;
+    height: 79px;
+    margin-bottom: 10px;
 
     &__logo {
         width: 140px;
         height: 26px;
         cursor: pointer;
     }
-    &__menu {
+}
+.c-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.c-nav-item {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin-right: 40px;
+    height: 100%;
+    align-items: center;
+    color: #6f7274;
+    fill: #6f7274;
+
+    &:hover .c-nav-dropped-menu {
         display: flex;
-        align-items: center;
+    }
 
-        &--active {
-            border: none;
-            cursor: pointer;
-            font-family: "Maison Neue Light", serif;
-            font-size: 16px;
-            color: grey;
-        }
+    &:hover {
+        color: black;
+        fill: black;
+    }
 
-        &--active:hover {
+    &__content {
+        font-family: "Maison Neue Light", serif;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.c-nav-dropped-menu {
+    display: none;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    border: 1px solid rgb(223, 225, 230);
+    top: 4.2rem;
+    min-width: 238px;
+    margin-left: -1rem;
+
+    &:hover {
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(122, 122, 122);
+        padding: 20px 0 20px 25px;
+        font-family: "Maison Neue Light", serif;
+        font-size: 14px;
+        height: 100%;
+
+        &:hover {
+            background-color: rgb(223, 225, 230);
             color: black;
         }
     }
 
-    &__menu-icon {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        margin-left: 48px;
+    &__change {
+        min-width: 150px;
+        right: 0;
     }
 }
